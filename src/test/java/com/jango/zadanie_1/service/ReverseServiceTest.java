@@ -3,12 +3,10 @@ package com.jango.zadanie_1.service;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class ReverseServiceTest {
 
-    @Autowired
-    private ReverseService reverseService;
+    private final ReverseService reverseService = new ReverseService();
 
     @Test
     public void shouldReturnReversedString() {
