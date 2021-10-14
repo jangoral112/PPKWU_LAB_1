@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 public class ReverseService {
 
     public String reverseString(String string) {
-        StringBuffer stringBuffer = new StringBuffer(string);
-        stringBuffer.reverse();
-        return stringBuffer.toString();
+        return new StringBuffer(string)
+            .reverse()
+            .toString();
     }
 }
